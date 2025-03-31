@@ -35,6 +35,12 @@
               "minecraft/managePlayers",
               "minecraft/installModpack"
             ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "accountSettings/accountInformation"
+            ]
           }
         ]
       }
