@@ -1,0 +1,34 @@
+---
+title: 'Creating Scheduled Backups'
+description: 'Scheduled backups are a great way to ensure that your server data is safe and secure. In this guide, we will show you how to create scheduled backups for your server.'
+icon: "download"
+---
+
+Login to the [SanoServers Control Panel](https://panel.sanoservers.com/)<br/>
+Navigate to your server's control panel<br/>
+Click ``Schedules`` on the left-hand side of the server's control panel<br/>
+Click ``Create schedule``<br/>
+
+Give the task a name in the Schedule Name option<br/>
+Select your desired frequency, for example you could put the below for once a day<br/>
+| Time Field    | Value     | Description                            |
+|---------------|-----------|----------------------------------------|
+| Minute        | 0      | Minute of the hour                    |
+| Hour          | 0      | Hour of the day                       |
+| Day of Month  | *      | Day of the month                       |
+| Month         | *      | Month of the year                      |
+| Day of Week   | *      | Day of the week (0 or 7 is Sunday)     |
+
+Select Create schedule<br/>
+After creating the schedule, you will be able to see it in the list of schedules<br/>
+Select the schedule you just created<br/>
+Click the ``3 dots`` on the right-hand side of the schedule<br/>
+Select ``Add a new task``<br/>
+For the action select ``Create Backup``<br/>
+If you wish to ignore the world folder, you can do so by adding the world folder to the ignore list<br/>
+Select ``Create task``<br/>
+
+You have now created a scheduled backup for your server. You can view the backups by clicking the ``Backups`` tab on the left-hand side of the server's control panel.
+
+
+<span style={{color: "#15803D"}}>[Written By Whogi]</span>
