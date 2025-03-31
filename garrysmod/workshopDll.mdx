@@ -1,0 +1,25 @@
+---
+title: 'How to Setup Workshop.dll for Gmod'
+sidebarTitle: 'Setup Workshop.dll (FastDL)'
+description: 'Setting up Workshop.dll on your Garrys Mod server can help players download custom content faster. In this guide, we will show you how to set up Workshop.dll on your Garrys Mod server.'
+icon: "plus"
+---
+
+1. Login to the [SanoServers Control Panel](https://panel.sanoservers.com/)
+2. Navigate to your server's control panel
+3. Stop your server if it's running.
+4. Click ``Files`` on the left-hand side of the server's control panel
+5. Navigate to ``/garrysmod/lua/autorun/server/``
+6. Double click on the ``workshop.lua`` file if it exists. If it doesn't, create a new file and name it ``workshop.lua``
+7. For every addon that you want the client to download, place the following: resource.AddWorkshop(workshopidhere). Replace 'workshopidhere' with the addon's workshop ID. This can be found at the end of the URL (numeric value).
+
+Example:
+```lua
+resource.AddWorkshop(123456789)
+resource.AddWorkshop(987654321)
+```
+
+8. Save the file
+9. Restart your server
+
+Your Garrys Mod server should now have Workshop.dll set up. Players will now be able to download custom content faster when they connect to your server. 

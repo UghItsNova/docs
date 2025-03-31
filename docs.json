@@ -1,31 +1,46 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SanoServers Documentation",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#0FBA6C",
+    "dark": "#0FBA6C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "General",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Introduction",
             "pages": [
-              "introduction"
+              "general/introduction"
             ]
           },
           {
-            "group": "Control Panel",
+            "group": "Information",
             "pages": [
-              "controlPanel/scheduledBackups",
-              "controlPanel/creatingSubusers"
+              "general/information/networkInfo",
+              "general/information/hardwareInfo"
             ]
           },
+          {
+            "group": "Policies",
+            "pages": [
+              "policies/tos",
+              "policies/pp",
+              "policies/rp",
+              "policies/sla",
+              "policies/fup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Minecraft",
+        "groups": [
           {
             "group": "Minecraft",
             "pages": [
@@ -33,13 +48,41 @@
               "minecraft/installMod",
               "minecraft/installPlugin",
               "minecraft/managePlayers",
-              "minecraft/installModpack"
+              "minecraft/installModpack",
+              "minecraft/addingOps",
+              "minecraft/coreSettings",
+              "minecraft/joinServer",
+              "minecraft/whitelist",
+              "minecraft/update"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Garry's Mod",
+        "groups": [
           {
-            "group": "Account",
+            "group": "Garry's Mod",
             "pages": [
-              "accountSettings/accountInformation"
+              "garrysmod/css",
+              "garrysmod/customMap",
+              "garrysmod/changeHostname",
+              "garrysmod/changeRcon",
+              "garrysmod/passwordProtect",
+              "garrysmod/workshopDll"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Game Panel",
+        "groups": [
+          {
+            "group": "Game Panel",
+            "pages": [
+              "controlPanel/scheduledBackups",
+              "controlPanel/creatingSubusers",
+              "controlPanel/accountInformation"
             ]
           }
         ]
@@ -50,7 +93,17 @@
         {
           "anchor": "Website",
           "href": "https://sanoservers.com",
-          "icon": "book-open-cover"
+          "icon": "house"
+        },
+        {
+          "anchor": "Game Panel",
+          "href": "https://panel.sanoservers.com",
+          "icon": "gamepad"
+        },
+        {
+          "anchor": "Network Status",
+          "href": "https://status.sanoservers.com",
+          "icon": "signal"
         },
         {
           "anchor": "Discord",
@@ -68,13 +121,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@sanoservers.com"
+        "href": "https://discord.gg/sanoservers"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Home",
+      "href": "https://sanoservers.com"
     }
   }
 }
